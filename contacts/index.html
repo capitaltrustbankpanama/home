@@ -440,7 +440,11 @@ if(GTranslateGetCurrentLang() != null)jQuery(document).ready(function() {var lan
 <li id="menu-item-14655" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14655 menu-item-depth-0"><a href="../correspondent-banks/index.html"><span class="nav_item_wrap"><span class="nav_title">Correspondent Banks</span></span></a></li>
 <li id="menu-item-14448" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-11850 current_page_item menu-item-14448 menu-item-depth-0"><a href="index.html"><span class="nav_item_wrap"><span class="nav_title">Contacts</span></span></a></li>
 <li id="menu-item-14569" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14569 menu-item-depth-0">
-	<a href="http://capitaltrustsbankpanama.s3-website.eu-north-1.amazonaws.com/"><span class="nav_item_wrap"><span class="nav_title">Customer Login</span></span></a></li>
+	<!-- <a href="http://capitaltrustsbankpanama.s3-website.eu-north-1.amazonaws.com/"><span class="nav_item_wrap"><span class="nav_title">Customer Login</span></span></a> -->
+	 <a href="http://capitaltrustsbankpanama.s3-website.eu-north-1.amazonaws.com/"><span class="nav_item_wrap"><span class="nav_title">Customer Login</span></span></a>
+	<!--<a href="https://www.capitaltrustbankpanama.com"><span class="nav_item_wrap"><span class="nav_title">Customer Login</span></span></a> -->
+	<!--<a href="https://www.capitaltrustbankpanama.com"><span class="nav_item_wrap"><span class="nav_title">Customer Login</span></span></a> -->
+</li>
 </ul></div></nav></div><!-- _________________________ Finish Navigation _________________________ --></div></div></div></header>
 <!-- _________________________ Finish Header _________________________ -->
 
@@ -619,8 +623,16 @@ jQuery(document).ready(function () {
 				</li>
 		</ul>
 	</div>
-</div>		<span class="footer_copyright copyright">
-			Capital Trust Bank © 2024 / All Rights Reserved		</span>
+</div>
+		<!--<span class="footer_copyright copyright">
+			Capital Trust Bank © 2024 / All Rights Reserved		</span>  -->
+		<span class="footer_copyright copyright">
+  			Capital Trust Bank © <span id="year"></span> / All Rights Reserved
+		</span>
+		<script>
+			// Set the current year dynamically
+			document.getElementById("year").textContent = new Date().getFullYear();
+		</script>
 	</div>
 </div></footer>
 <!-- _________________________ Finish Footer _________________________ -->
